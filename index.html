@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Caballero Lopez - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-content">
+            <div class="logo">
+                <h1>Samuel Caballero Lopez</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
+                <img src="images/linkedin_image.png" alt="Samuel Caballero Lopez Profile Photo" class="profile-photo">
+                <h2>Data Analyst | Data Scientist | BI Analyst</h2>
+                <p>Welcome to my professional portfolio.</p>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Passionate about data analysis and evidence-based decision-making, my education has provided me with a solid foundation to tackle complex challenges. My goal is to apply my analytical skills in dynamic and collaborative environments, consistently enhancing my professional performance.</p>
+
+                        <p>Academically, I hold a Master's in Big Data & Business Intelligence from the University of Granada, complemented by a Sociology degree, which provides me with a diverse and critical perspective on data. My core technical proficiency includes SQL, Python, BigQuery, R, NVivo, ATLAS.ti, SPSS, and Spark, alongside advanced expertise in Machine Learning. I am highly skilled in building predictive models, managing robust databases, supporting web application development, and generating automated, interactive dashboards using tools like Power BI and Looker Studio.</p>
+
+                        <p>In my professional experience, I have worked in Data Analytics for Digital Marketing, building predictive models with machine learning in Python and managing databases in BigQuery. I have also provided support for web application development and contributed to the development of AI-based tools. Furthermore, my experience includes the management of public grants and direct contact with political bodies, demonstrating versatility in complex administrative environments.</p>
+
+                        <p>My continuous learning journey includes a Google Business Intelligence certificate, specialized courses in BI Dashboards with IBM Cognos Analytics and Google Looker, and Scrum Manager (expert level). Further training in Neural Networks with Python and Tensorflow, Blockchain Basics (University at Buffalo), and Marketing Software (Hubspot) solidifies my commitment to staying at the forefront of technological advancements in data science.</p>
+
+                        <p>Beyond technical prowess, I possess strong adaptability, time management, agile methodology, collaboration, and analytical thinking. As a native Spanish speaker with proficiency in English (B1 Cambridge), I am well-equipped for effective communication and teamwork in global professional settings.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2>Projects</h2>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/barchart.png" alt="Email Campaigns Dashboard Project">
+                        </div>
+                        <div class="project-info">
+                            <h3>Email Campaigns Dashboard Automation</h3>
+                            <p class="project-description">This project focuses on the daily automation of email campaigns and the creation of an interactive dashboard to monitor performance and key metrics daily.</p>
+                            <p class="project-tech">Technologies: Python, Brevo API, Google Sheets, Google Cloud Service Account</p>
+                            <div class="project-links">
+                                <a href="https://github.com/samuelcaballerolopez/Email-campaigns-Dashboard-automated" target="_blank" class="btn">View on GitHub</a>
+                                </div>
+                        </div>
+                    </div>
+
+                    </div> </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact</h2>
+                <p><strong>Email:</strong> <a href="mailto:samuelcablop@gmail.com">samuelcablop@gmail.com</a></p>
+                <p><strong>Phone:</strong> +34 629966316</p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/samuel-caballero-lopez/" target="_blank">LinkedIn Profile</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/yourprofile" target="_blank">GitHub Profile</a></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Samuel Caballero Lopez. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
