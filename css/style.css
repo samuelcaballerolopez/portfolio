@@ -276,7 +276,7 @@ section h2 {
     width: 100%;
     max-width: 1000px; /* Ancho máximo aumentado */
     height: 500px;    /* Altura aumentada para mejor lectura */
-    margin: 30px auto; 
+    margin: 35px auto; 
     border: 1px solid #ddd;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     background-color: #f4f4f4; 
