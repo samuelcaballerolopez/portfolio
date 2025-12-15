@@ -1,6 +1,6 @@
 /* Estilos generales y reseteo básico */
 * {
-    box-sizing: border-box; /* Incluye padding y border en el tamaño total del elemento */
+    box-sizing: border-box; 
     margin: 0;
     padding: 0;
 }
@@ -8,8 +8,8 @@
 body {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.6;
-    color: #212B36; /* Texto principal: Gris muy oscuro */
-    background-color: #042B3A; /* FONDO PRINCIPAL: GRIS MUY OSCURO */
+    color: #212B36; 
+    background-color: #042B3A; 
 }
 
 /* Contenedor general para centrar el contenido */
@@ -243,33 +243,49 @@ section h2 {
     margin-top: auto;
 }
 
-/* --- ESTILOS DE BOTONES GLOBALES (Modificado) --- */
-/* Antes esto estaba anidado solo para proyectos, ahora es global para usarlo en el CV */
+/* --- ESTILOS DE BOTONES GLOBALES --- */
 .btn {
     display: inline-block;
-    background-color: #157A90; /* Botón: Azul brillante */
+    background-color: #157A90; 
     color: #fff;
-    padding: 12px 25px; /* Un poco más de padding para que se vea mejor */
+    padding: 12px 25px; 
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s; /* Añadida transición de movimiento */
+    transition: background-color 0.3s ease, transform 0.2s; 
     font-size: 0.95em;
     font-weight: 600;
-    margin: 5px; /* Margen para cuando se apilan */
+    margin: 5px; 
 }
 
 .btn:hover {
     background-color: #0056b3; 
-    transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
+    transform: translateY(-2px); 
 }
 
-/* --- Estilos específicos para la sección de Resume/CV (Nuevo) --- */
+/* --- Estilos para la sección de Resume/CV --- */
 .resume-buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
     flex-wrap: wrap;
+}
+
+/* Estilos para el visor de PDF */
+.pdf-container {
+    width: 100%;
+    max-width: 900px;
+    height: 800px; /* Altura del visor */
+    margin: 20px auto; 
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-color: #f4f4f4; /* Fondo gris claro mientras carga */
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 /* Contact Section */
@@ -393,5 +409,10 @@ footer {
     }
     .project-links {
         justify-content: center;
+    }
+
+    /* Ajuste de altura del PDF para móviles */
+    .pdf-container {
+        height: 450px;
     }
 }
