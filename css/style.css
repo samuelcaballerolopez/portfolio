@@ -274,11 +274,11 @@ section h2 {
 /* Estilos para el visor de PDF (IFRAME) */
 .pdf-container {
     width: 100%;
-    max-width: 900px;
-    height: 800px; /* Altura Fija Importante */
-    margin: 20px auto; 
+    max-width: 1000px; /* Ancho máximo aumentado */
+    height: 1100px;    /* Altura aumentada para mejor lectura */
+    margin: 30px auto; 
     border: 1px solid #ddd;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     background-color: #f4f4f4; 
 }
 
@@ -414,6 +414,6 @@ footer {
 
     /* Ajuste de altura del PDF para móviles */
     .pdf-container {
-        height: 450px;
+        height: 500px;
     }
 }
