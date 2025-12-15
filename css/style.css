@@ -8,8 +8,8 @@
 body {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.6;
-    color: #212B36; /* Texto principal: Gris muy oscuro, casi negro (seguirá en blanco dentro de los contenedores) */
-    background-color: #042B3A; /* FONDO PRINCIPAL: GRIS MUY OSCURO PARA ALTO CONTRASTE */
+    color: #212B36; /* Texto principal: Gris muy oscuro */
+    background-color: #042B3A; /* FONDO PRINCIPAL: GRIS MUY OSCURO */
 }
 
 /* Contenedor general para centrar el contenido */
@@ -134,7 +134,7 @@ section h2 {
     background-color:#dbdbdb
 }
 
-
+/* About Section */
 .about-section h2 {
     text-align: center;
 }
@@ -156,14 +156,13 @@ section h2 {
 .about-text p {
     font-size: 1.15em;
     line-height: 1.8;
-    color: #212B36; /* Texto de About Me: Gris muy oscuro */
+    color: #212B36; 
     margin-bottom: 1em;
 }
 
 .about-text p:last-child {
     margin-bottom: 0;
 }
-
 
 /* --- Projects Section Styles --- */
 .projects-grid {
@@ -176,9 +175,9 @@ section h2 {
 }
 
 .project-card {
-    background: #FFFFFF; /* Fondo de la tarjeta: Blanco puro */
+    background: #FFFFFF; 
     border-radius: 8px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15); /* Sombra más fuerte para la tarjeta */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15); 
     overflow: hidden;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -189,14 +188,14 @@ section h2 {
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.25); /* Sombra aún más fuerte al pasar el ratón */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25); 
 }
 
 .project-image {
     width: 100%;
     height: 200px;
     overflow: hidden;
-    background-color: #F0F4F8; /* Fondo si no hay imagen: Gris azulado muy claro */
+    background-color: #F0F4F8; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,18 +220,18 @@ section h2 {
 .project-info h3 {
     font-size: 1.8em;
     margin-bottom: 10px;
-    color: #212B36; /* Título del proyecto: Gris muy oscuro */
+    color: #212B36; 
 }
 
 .project-info .project-description {
     font-size: 1em;
-    color: #637381; /* Descripción del proyecto: Gris medio/oscuro */
+    color: #637381; 
     margin-bottom: 15px;
 }
 
 .project-info .project-tech {
     font-size: 0.9em;
-    color: #637381; /* Tecnologías: Gris medio/oscuro */
+    color: #637381; 
     margin-bottom: 20px;
     font-style: italic;
 }
@@ -244,45 +243,57 @@ section h2 {
     margin-top: auto;
 }
 
-.project-links .btn {
+/* --- ESTILOS DE BOTONES GLOBALES (Modificado) --- */
+/* Antes esto estaba anidado solo para proyectos, ahora es global para usarlo en el CV */
+.btn {
     display: inline-block;
     background-color: #157A90; /* Botón: Azul brillante */
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 25px; /* Un poco más de padding para que se vea mejor */
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
-    font-size: 0.9em;
+    transition: background-color 0.3s ease, transform 0.2s; /* Añadida transición de movimiento */
+    font-size: 0.95em;
     font-weight: 600;
+    margin: 5px; /* Margen para cuando se apilan */
 }
 
-.project-links .btn:hover {
-    background-color: #0056b3; /* Botón al pasar el ratón: Azul más oscuro */
+.btn:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
 }
 
+/* --- Estilos específicos para la sección de Resume/CV (Nuevo) --- */
+.resume-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
 
 /* Contact Section */
 .contact-section p {
     font-size: 1.1em;
     margin-bottom: 10px;
-    color: #212B36; /* Texto de contacto: Gris muy oscuro */
+    color: #212B36; 
 }
 
 .contact-section a {
-    color: #007bff; /* Enlaces de contacto: Azul brillante */
+    color: #007bff; 
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .contact-section a:hover {
-    color: #0056b3; /* Enlaces al pasar el ratón: Azul más oscuro */
+    color: #0056b3; 
     text-decoration: underline;
 }
 
 /* Footer */
 footer {
-    background: #042B3A; /* Fondo del footer: Tono aún más oscuro de gris */
-    color: #FFFFFF; /* Texto del footer: Blanco puro */
+    background: #042B3A; 
+    color: #FFFFFF; 
     text-align: center;
     padding: 25px;
     font-size: 0.9em;
@@ -290,7 +301,7 @@ footer {
 
 
 /* Media Queries para Responsive Design */
-@media (min-width: 769px) { /* Para pantallas más grandes que 768px (escritorio) */
+@media (min-width: 769px) { /* Escritorio */
     .project-card {
         flex-direction: row;
         align-items: stretch;
@@ -320,7 +331,7 @@ footer {
     }
 }
 
-@media (max-width: 768px) { /* Para móviles y tablets */
+@media (max-width: 768px) { /* Móviles y Tablets */
     header .nav-content {
         flex-direction: column;
         padding: 10px 0;
